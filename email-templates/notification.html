@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>New message from your portfolio</title>
+</head>
+<!-- EmailJS notification template. Subject: New portfolio message from {{from_name}} · To: arunkumarar0001@gmail.com · Reply-To: {{from_email}} -->
+<body style="margin:0;padding:0;background-color:#060913;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#060913"
+  style="background-color:#060913;background-image:radial-gradient(circle at 12% 0%, rgba(139,92,246,.38), transparent 45%),radial-gradient(circle at 95% 35%, rgba(34,211,238,.22), transparent 45%),radial-gradient(circle at 40% 100%, rgba(236,72,153,.16), transparent 50%);">
+  <tr>
+    <td align="center" style="padding:40px 16px;">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
+
+        <!-- Brand -->
+        <tr>
+          <td style="padding:0 4px 18px;font-family:'Segoe UI',Arial,sans-serif;font-size:22px;font-weight:800;color:#e9eaff;letter-spacing:-0.5px;">
+            Arun<span style="color:#a78bfa;">.</span>
+            <span style="float:right;font-family:Consolas,'Courier New',monospace;font-size:11px;font-weight:600;letter-spacing:2px;color:#22d3ee;line-height:30px;">&#9679; PORTFOLIO NOTIFICATION</span>
+          </td>
+        </tr>
+
+        <!-- Card -->
+        <tr>
+          <td bgcolor="#11162e" style="background-color:#11162e;border:1px solid #2a3060;border-radius:18px;overflow:hidden;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr><td height="5" style="height:5px;line-height:5px;font-size:0;background-color:#a78bfa;background-image:linear-gradient(90deg,#a78bfa,#818cf8,#22d3ee);border-radius:18px 18px 0 0;">&nbsp;</td></tr>
+              <tr>
+                <td style="padding:32px 34px 20px;font-family:'Segoe UI',Arial,sans-serif;">
+                  <p style="margin:0 0 10px;font-family:Consolas,'Courier New',monospace;font-size:12px;letter-spacing:2px;color:#a78bfa;text-transform:uppercase;">New contact request</p>
+                  <h1 style="margin:0 0 10px;font-size:25px;line-height:1.25;font-weight:800;color:#e9eaff;">{{from_name}} sent you a message</h1>
+                  <p style="margin:0;font-size:14px;color:#9aa1c7;">Received {{sent_at}} from your portfolio contact form.</p>
+                </td>
+              </tr>
+
+              <!-- Details table -->
+              <tr>
+                <td style="padding:0 34px 26px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #2a3060;border-radius:12px;border-collapse:separate;font-family:'Segoe UI',Arial,sans-serif;">
+                    <tr>
+                      <td width="130" valign="top" bgcolor="#0b1024" style="width:130px;padding:14px 16px;background-color:#0b1024;border-bottom:1px solid #2a3060;border-radius:12px 0 0 0;font-family:Consolas,'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#9aa1c7;text-transform:uppercase;">Name</td>
+                      <td valign="top" style="padding:14px 16px;border-bottom:1px solid #2a3060;font-size:15px;font-weight:700;color:#e9eaff;">{{from_name}}</td>
+                    </tr>
+                    <tr>
+                      <td valign="top" bgcolor="#0b1024" style="padding:14px 16px;background-color:#0b1024;border-bottom:1px solid #2a3060;font-family:Consolas,'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#9aa1c7;text-transform:uppercase;">Phone</td>
+                      <td valign="top" style="padding:14px 16px;border-bottom:1px solid #2a3060;font-size:15px;color:#e9eaff;"><a href="tel:{{phone}}" style="color:#22d3ee;text-decoration:none;font-weight:600;">{{phone}}</a></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" bgcolor="#0b1024" style="padding:14px 16px;background-color:#0b1024;border-bottom:1px solid #2a3060;font-family:Consolas,'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#9aa1c7;text-transform:uppercase;">Email</td>
+                      <td valign="top" style="padding:14px 16px;border-bottom:1px solid #2a3060;font-size:15px;color:#e9eaff;"><a href="mailto:{{from_email}}" style="color:#22d3ee;text-decoration:none;font-weight:600;">{{from_email}}</a></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" bgcolor="#0b1024" style="padding:14px 16px;background-color:#0b1024;border-radius:0 0 0 12px;font-family:Consolas,'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#9aa1c7;text-transform:uppercase;">Description</td>
+                      <td valign="top" style="padding:14px 16px;font-size:15px;line-height:1.6;color:#e9eaff;white-space:pre-line;">{{message}}</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Actions -->
+              <tr>
+                <td style="padding:0 34px 32px;font-family:'Segoe UI',Arial,sans-serif;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td style="padding:0 8px 8px 0;">
+                        <a href="mailto:{{from_email}}?subject=Re:%20Your%20message%20on%20my%20portfolio" style="display:inline-block;padding:11px 18px;border-radius:10px;background-color:#a78bfa;background-image:linear-gradient(100deg,#a78bfa,#22d3ee);color:#0b0620;font-size:14px;font-weight:700;text-decoration:none;">Reply to {{from_name}}</a>
+                      </td>
+                      <td style="padding:0 0 8px 0;">
+                        <a href="tel:{{phone}}" style="display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid #3a4180;color:#e9eaff;font-size:14px;font-weight:700;text-decoration:none;">Call</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <p style="margin:12px 0 0;font-size:13px;color:#6b7299;">Sent from <a href="{{page_url}}" style="color:#9aa1c7;">{{page_url}}</a>. A thank-you email was sent to the sender automatically.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td align="center" style="padding:20px 10px 0;font-family:'Segoe UI',Arial,sans-serif;font-size:12px;line-height:1.6;color:#6b7299;">
+            Portfolio notification for Arun Kumar A R<br>
+            Made by Arunkumar A R &copy; 2026 All rights reserved
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
