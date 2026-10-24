@@ -160,31 +160,67 @@
           <h2 id="work-title">Recent <span class="grad-text">projects</span></h2>
         </header>
 
+        <!--
+          Each card: an image area, a small "kind" label, title, description, tech tags.
+          Image styles: project__media--shot (website screenshot, cropped from the top),
+          project__media--fit (whole image on white), project__media--phone (phone screen on a gradient).
+          Screenshots live in the images/ folder.
+        -->
         <div class="grid grid--3">
-          <!-- To add a screenshot: replace the .project__media div with
-               <img src="images/go-ride.webp" alt="Go Ride website home page" loading="lazy" width="800" height="500"> -->
           <article class="project reveal">
-            <div class="project__media" role="img" aria-label="Go Ride project image placeholder"><span>Go Ride</span></div>
+            <div class="project__media project__media--shot"><img src="images/preethika.png" alt="Preethika Associates home page with a loan EMI card" loading="lazy" width="1280" height="800"></div>
             <div class="project__body">
+              <p class="project__kind">Client · Web &amp; Android</p>
+              <h3>Preethika Associates</h3>
+              <p>An all-in-one loan management system: an Angular web app, a Node.js and Express API on MongoDB with secure sign-in, and an Android app built with Capacitor.</p>
+              <ul class="tags"><li>Angular</li><li>Node.js</li><li>MongoDB</li><li>Android</li></ul>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__media project__media--fit"><img src="images/tvk.png" alt="TVK app screens: add member form, ward scoreboard and organisation view" loading="lazy" width="819" height="457"></div>
+            <div class="project__body">
+              <p class="project__kind">Client · Mobile app</p>
+              <h3>TVK App</h3>
+              <p>A member management app for the TVK Singanallur team: register members ward by ward, rank units on a live scoreboard and manage the organisation, in Tamil and English.</p>
+              <ul class="tags"><li>Mobile app</li><li>Tamil &amp; English</li></ul>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__media project__media--shot"><img src="images/inyra.png" alt="Inyra storefront home page with shopping banner and categories" loading="lazy" width="1280" height="800"></div>
+            <div class="project__body">
+              <p class="project__kind">Product · Web</p>
+              <h3>Inyra E-commerce</h3>
+              <p>An online store with two parts: a customer storefront and an owner admin panel for managing products and categories.</p>
+              <ul class="tags"><li>Angular</li><li>Node.js</li><li>MongoDB</li><li>Bootstrap</li></ul>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__media project__media--phone"><img src="images/onemeg.png" alt="One-Meg PDF app screen with Take photo and From gallery buttons" loading="lazy" width="1080" height="1800"></div>
+            <div class="project__body">
+              <p class="project__kind">Product · Android</p>
+              <h3>One-Meg PDF</h3>
+              <p>Turns camera photos or gallery images into a single PDF under 1 MB, with crop, rotate and page reordering, ready to save or share.</p>
+              <ul class="tags"><li>Android</li><li>Java</li><li>PDF</li></ul>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__media project__media--phone"><img src="images/reader.png" alt="Pocket PDF Reader app start screen" loading="lazy" width="1080" height="1800"></div>
+            <div class="project__body">
+              <p class="project__kind">Product · Android</p>
+              <h3>Pocket PDF Reader</h3>
+              <p>An offline PDF reader that searches the whole document and lists every match with its page number, for quickly finding answers in study material.</p>
+              <ul class="tags"><li>Android</li><li>Java</li><li>PDF.js</li></ul>
+            </div>
+          </article>
+          <!-- To add a screenshot later, replace this div with
+               <div class="project__media project__media--shot"><img src="images/go-ride.png" alt="Go Ride website home page" loading="lazy" width="1280" height="800"></div> -->
+          <article class="project reveal">
+            <div class="project__media" role="img" aria-label="Go Ride"><span>Go Ride</span></div>
+            <div class="project__body">
+              <p class="project__kind">Client · Website</p>
               <h3>Go Ride</h3>
-              <p>Self-drive car rental &amp; tours website.</p>
-              <ul class="tags"><li>Website</li><li>[Tech stack]</li><li>[Live link]</li></ul>
-            </div>
-          </article>
-          <article class="project reveal">
-            <div class="project__media" role="img" aria-label="Project 2 image placeholder"><span>[Project 2]</span></div>
-            <div class="project__body">
-              <h3>[Project 2]</h3>
-              <p>[Short description of the project.]</p>
-              <ul class="tags"><li>[Tag]</li><li>[Tag]</li></ul>
-            </div>
-          </article>
-          <article class="project reveal">
-            <div class="project__media" role="img" aria-label="Project 3 image placeholder"><span>[Project 3]</span></div>
-            <div class="project__body">
-              <h3>[Project 3]</h3>
-              <p>[Short description of the project.]</p>
-              <ul class="tags"><li>[Tag]</li><li>[Tag]</li></ul>
+              <p>A website for a self-drive car rental and tours business.</p>
+              <ul class="tags"><li>Website</li></ul>
             </div>
           </article>
         </div>

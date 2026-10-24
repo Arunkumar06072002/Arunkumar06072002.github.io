@@ -271,7 +271,26 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
     var(--navy);
 }
 .project__media span { font-family: var(--font-head); font-weight: 700; font-size: 1.3rem; color: #fff; opacity: .85; }
-.project__body { padding: 22px 22px 24px; }
+.project__media img { transition: transform .5s var(--ease); }
+.project:hover .project__media img { transform: scale(1.04); }
+/* Website screenshot, cropped from the top */
+.project__media--shot { display: block; overflow: hidden; border-bottom: 1px solid var(--line); }
+.project__media--shot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+/* Whole image shown on white */
+.project__media--fit { background: #fff; overflow: hidden; border-bottom: 1px solid var(--line); }
+.project__media--fit img { width: 100%; height: 100%; object-fit: contain; }
+/* Phone screenshot on the brand gradient */
+.project__media--phone { overflow: hidden; place-items: start center; padding-top: 7%; }
+.project__media--phone img {
+  width: 30%; height: auto; aspect-ratio: auto; border-radius: 16px; border: 3px solid rgba(255,255,255,.25);
+  box-shadow: 0 18px 40px -10px rgba(0,0,0,.7);
+}
+.project__body { padding: 22px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+.project__body .tags { margin-top: auto; padding-top: 4px; }
+.project__kind {
+  font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 .5em;
+}
 .project__body p { color: var(--muted); font-size: .96rem; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li {
